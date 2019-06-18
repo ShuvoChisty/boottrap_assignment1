@@ -1,0 +1,77 @@
+header{
+	background-image: url(../images/p2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+header::before{
+	content:"";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #403e3ec9;
+	top: 0;
+	left: 0;
+
+}
+.vh-75{
+	min-height: 75vh;
+}
+.vh-50{
+	min-height: 50vh;
+}
+.banner-content span{
+	width: 20px;
+	height: 5px;
+	display: block;
+	background:#dc3545;
+	margin:auto;
+	transition: all 0.4s;
+}
+.banner-content:hover span{
+	width: 500px;
+}
+.testimonial-section{
+	background-color: #F4F5F9;
+}
+.testimonial{}
+.testimonial::before{
+	content:"";
+	font-size: 300px;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	line-height: 0;
+	color: #fff;
+	z-index: 1;
+	background-image: url(../images/c.png);
+	background-repeat: no-repeat;
+	transform: translateY(-50%);
+	background-size: 20px;
+	width: 100%;
+	height: 100%;
+}
+.testimonial h4{
+	position: relative;
+
+}
+.testimonial span{
+	position: relative;
+	
+}
+.testimonial {
+	text-align: center;
+	position: relative;
+	
+}
+.about-section{
+	background-image: url(../images/p3.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+@media (max-width: 1199px) {
+.vh-75{min-height: 50vh; }
+}
+@media (max-width: 575px) {
+.banner-content h1{font-size: 20px; }
+}
